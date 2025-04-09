@@ -1,6 +1,7 @@
 # EMG-driven FES System using Unity and C
 
-This project is a running prototype under contruction at the Mixed Reality Lab at the Frankfurt University of Applied Sciences. We, the team Yunus Söleyici and Jessica Sehrt develope this system prototype under the supervision of Prof. Dr. Valentin Schwind. Please contact us if you are interested in a collaboration to execute the system further. 
+This project is a running software prototype under contruction intended to work with ScienceMode4 protocol for the P24 Science device which is a 8 channel stimulator for functional electrical stimulation (FES). 
+This system prototype was developed by the team of Prof. Dr. Valentin Schwind (Yunus Söleyici and Jessica Sehrt) at the Mixed Reality Lab at the Frankfurt University of Applied Sciences. . Please contact us if you are interested in a collaboration to execute the system further. 
 
 ##  Target Audience & Use Case
 
@@ -12,7 +13,7 @@ This repository contains an experimental framework for **functional electrical s
 It consists of two main components:
 
 - A **Unity project** that simulates and processes EMG data
-- An external **C program** that communicates with Unity via a named pipe and sends impulses using the [ScienceMode4 Library](https://github.com/muellerlab/ScienceMode4)
+- An external **C program** that communicates with Unity via a named pipe and sends impulses using the [ScienceMode4 Library] from HASOMED (https://github.com/ScienceMode/ScienceMode4_P24)
 
 ##  Project Structure
 
