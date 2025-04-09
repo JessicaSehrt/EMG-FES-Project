@@ -1,19 +1,27 @@
 # EMG-driven FES System using Unity and C
 
+This project is a running prototype under contruction at the Mixed Reality Lab at the Frankfurt University of Applied Sciences. We, the team Yunus Söleyici and Jessica Sehrt develope this system prototype under the supervision of Prof. Dr. Valentin Schwind. Please contact us if you are interested in a collaboration to execute the system further. 
+
+##  Target Audience & Use Case
+
+This project is aimed at developers and researchers working with **biofeedback**, **EMG**, and **FES** in real-time applications – especially in **VR/Unity** environments.
+
+## Content
+
 This repository contains an experimental framework for **functional electrical stimulation (FES)** driven by **electromyography (EMG)** in real-time.  
 It consists of two main components:
 
 - A **Unity project** that simulates and processes EMG data
 - An external **C program** that communicates with Unity via a named pipe and sends impulses using the [ScienceMode4 Library](https://github.com/muellerlab/ScienceMode4)
 
-## 🧩 Project Structure
+##  Project Structure
 
 ```
 UnityProject/      → EMG simulation & processing, Named Pipe Client
 CProgram/          → Connects with Unity, sends stimulation impulses (uses ScienceMode4)
 ```
 
-## 🚀 How It Works
+##  How It Works
 
 ### Unity Component (`UnityProject/`)
 
@@ -38,31 +46,28 @@ CProgram/          → Connects with Unity, sends stimulation impulses (uses Sci
 
 > The library must be available locally or added as a submodule (see below).
 
-## 📥 Using the ScienceMode4 Library
+##  Using the ScienceMode4 Library
 
 The C component depends on the [ScienceMode4](https://github.com/muellerlab/ScienceMode4) library.
 
-### ✅ Option 1: Manual Download
+###  Option 1: Manual Download
 Download the library and place it in a folder like `CProgram/ScienceMode4/`.  
 Make sure your compiler can find the headers and .lib/.dll files.
 
-### 🔁 Option 2: Add as a Git Submodule
+###  Option 2: Add as a Git Submodule
 
 ```bash
 git submodule add https://github.com/muellerlab/ScienceMode4.git CProgram/ScienceMode4
 git submodule update --init --recursive
 ```
 
-## 🧪 Target Audience & Use Case
 
-This project is aimed at developers and researchers working with **biofeedback**, **EMG**, and **FES** in real-time applications – especially in **VR/Unity** environments.
-
-## 📌 To Do
+##  To Do
 
 - [ ] Add error handling (Unity ↔ C communication)
 - [ ] Automatically configure COM port
 - [ ] Add support for real EMG devices
 
-## 📜 License
+##  License
 
-*(Add your license here, e.g., MIT, GPL, or CC BY-SA depending on your preferences.)*
+CC BY-SA creative commons license
