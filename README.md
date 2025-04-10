@@ -3,10 +3,6 @@
 This project is a running software prototype under contruction intended to work with ScienceMode4 protocol for the P24 Science device which is a 8 channel stimulator for functional electrical stimulation (FES). 
 This system prototype was developed by the team of Prof. Dr. Valentin Schwind (Yunus Söleyici and Jessica Sehrt) at the Mixed Reality Lab at the Frankfurt University of Applied Sciences. Please contact us if you are interested in a collaboration to execute the system further. 
 
-##  Target Audience & Use Case
-
-This project is aimed at developers and researchers working with **biofeedback**, **EMG**, and **FES** in real-time applications – especially in **VR/Unity** environments.
-
 ## Content
 
 This repository contains an experimental framework for **functional electrical stimulation (FES)** driven by **electromyography (EMG)** in real-time.  
