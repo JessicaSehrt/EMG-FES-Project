@@ -58,13 +58,6 @@ git submodule add https://github.com/muellerlab/ScienceMode4.git CProgram/Scienc
 git submodule update --init --recursive
 ```
 
-
-##  To Do
-
-- [ ] Add error handling (Unity ↔ C communication)
-- [ ] Automatically configure COM port
-- [ ] Add support for real EMG devices
-
 ##  License
 
 CC BY-SA creative commons license
